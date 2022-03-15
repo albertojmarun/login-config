@@ -1,0 +1,111 @@
+body {
+     margin: 0 5px;
+     padding: 0;
+     background-color: lightblue;
+}
+
+#logo_navbar {
+     min-height: 80px;
+     height: 8vh;
+}
+
+li {
+     float: left;
+     display: flex;
+     align-content: center;
+}
+
+li a {
+     background-color: #3e4564;
+     color: white;
+     display: block;
+     padding: 0.5em;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+
+li a:hover {
+     color: black;
+     background-color: white;
+}
+
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #3e4564;
+     display: flex;
+     align-content: center;
+     justify-content: space-between;
+}
+
+.form-group {
+     margin-top: 3px;
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+}
+
+.form-choice {
+     display: flex;
+     flex-direction: column;
+     max-width: 100vw;
+     margin: 3px;
+}
+
+.form-choice>input[type="number"] {
+     border-radius: 5px;
+}
+
+#submit-boxes {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
+#submit-boxes button{
+     background-color: #3e4564;
+     color: white;
+     cursor: pointer;
+     margin: 4px 2px;
+     border-radius: 10px;
+     padding: 14px 16px;
+     text-decoration: none;
+     max-width: 600px;
+     width: 80%;
+}
+
+.card {
+     background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: 0.3s;
+     width: 40%;
+     border-radius: 5px;
+     min-width: 150px;
+     max-width: 300px;
+     margin-bottom: 10px;
+}
+
+.card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img{
+     width: 100%;
+     border-radius: 5px 5px 0 0;
+}
+
+.container {
+     padding: 2px 16px;
+}
+
+.div_center{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     max-width: 90%;
+     margin: 0 10%;
+}

@@ -1,0 +1,54 @@
+body{
+     margin: 0;
+     padding: 0;
+     background-color: lightblue;
+}
+
+#logo_login{
+     max-width: 250px;
+     border-radius: 10px;
+}
+
+.logo-banner, .submit{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+}
+
+.form-group{
+     margin: 0 10%;
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+}
+
+.form-group label{
+     font-weight: bold
+}
+
+.form-group input{
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     padding: 5px;
+     margin: 5px;
+}
+
+button[type="submit"]{
+     background-color: #3e4564;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+     color: white;
+     padding: 5px;
+     margin: 5px;
+     border-radius: 5px;
+}
+
+h1{
+     text-align: center;
+}
+
+.error_message{
+     color: red;
+     font-size: small;
+     text-align: center;
+}
