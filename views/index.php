@@ -1,6 +1,6 @@
 <?php
      include '../php/sessions.php'; 
-     checkSession();
+     if(checkSession()) header('Location: ../', true, 302);
 ?>
 
 <!DOCTYPE html>
@@ -14,40 +14,40 @@
           <script src="../js/scripts.js" defer></script>
           <title>MENU</title>
      </head>
-     <body>
+     <body onload="initSession();">
           <header>
                <ul>
                     <li>
                          <a href="#">LOGO</a>
                     </li>
                     <li>
-                         <a href="../php/close_session.php">Cerrar Sesion</a>
+                         <a href="../php/logout.php">Cerrar Sesion</a>
                     </li>
                </ul>
           </header>
           <br>       
-          <div class="div_center">
-               <button onclick="requestCode();" class="card">
+          <div class="div-center">
+               <button onclick="redirect('login_maquina.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="MAQUINA">
                     <h4>Administración Máquina</h4>
                </button>
-               <button onclick="requestCode();" class="card">
+               <button onclick="redirect('example.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="Historial">
                     <h4>Historial</h4>
                </button>
-               <button onclick="requestCode();" class="card">
+               <button onclick="redirect('example.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="Datos">
                     <h4>Cargar Datos</h4>
                </button>
-               <button onclick="requestCode();" class="card">
+               <button onclick="redirect('example.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="Estadisticas">
                     <h4>Estadísticas</h4>
                </button>
-               <button onclick="requestCode();" class="card">
+               <button onclick="redirect('example.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="Iniciar">
                     <h4>Iniciar</h4>
                </button>
-               <button onclick="requestCode();" class="card">
+               <button onclick="redirect('example.php')" class="card">
                     <img src="../assets/ajmi_logo.jpeg" alt="Parar">
                     <h4>Parar</h4>
                </button>
