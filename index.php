@@ -1,6 +1,21 @@
 <?php
      include 'php/sessions.php';
-     $message = initSession();
+     $code = initSession();
+
+     switch($code){
+          case ERROR_INICIAR_SESION:
+               $message = 'Usuario o contraseña incorrectos';
+          break;
+
+          case SESION_INICIADA:
+               header('Location: ./views/index.php', true, 302);
+               exit;
+          break;
+          
+          default:
+               $message = '';
+          break;
+     }
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +38,7 @@
                     if(isset($message)) echo $message;
                ?>
           </p>
-          <form method="POST" action="#">
+          <form method="POST" action="index.php">
                <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" placeholder="Introduce el Usuario:" required />
