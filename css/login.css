@@ -17,7 +17,6 @@ button[type="submit"],
      padding: 5px;
 }
 
-
 .error_message{
      color: red;
      font-size: small;
@@ -29,7 +28,6 @@ h1{
 }
 
 .form-group{
-     display: flex;
      flex-direction: column;
      margin: 0 10%;
      width: 80%;
@@ -39,9 +37,15 @@ h1{
      font-weight: bold
 }
 
+.form-group,
 .logo-banner,
 .submit{
      display: flex;
+}
+
+
+.logo-banner,
+.submit{
      flex-direction: row;
      justify-content: center;
 }
